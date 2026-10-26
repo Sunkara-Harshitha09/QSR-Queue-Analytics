@@ -1,0 +1,22 @@
+﻿services:
+  postgres:
+    image: postgres:16
+    container_name: qsr_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: qsr_analytics
+      POSTGRES_USER: qsr_app
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - qsr_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U qsr_app -d qsr_analytics"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  qsr_postgres_data:
+

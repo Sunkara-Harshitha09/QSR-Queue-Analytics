@@ -1,0 +1,94 @@
+{
+  "counter.mp4": {
+    "description": "Wide-angle restaurant counter",
+    "resolution": [
+      2560,
+      1440
+    ],
+    "service_activity_region": [
+      [
+        700,
+        650
+      ],
+      [
+        1500,
+        620
+      ],
+      [
+        1600,
+        1000
+      ],
+      [
+        850,
+        1250
+      ]
+    ],
+    "counter_region": [],
+    "queue_region": [
+      [
+        1086,
+        78
+      ],
+      [
+        1786,
+        368
+      ],
+      [
+        1654,
+        1402
+      ],
+      [
+        362,
+        1334
+      ]
+    ],
+    "video_width": 2560,
+    "video_height": 1440
+  },
+  "normal_queue.mp4": {
+    "description": "Vertical close-up of service counter",
+    "resolution": [
+      240,
+      426
+    ],
+    "queue_region": [
+      [
+        0,
+        12
+      ],
+      [
+        234,
+        30
+      ],
+      [
+        233,
+        407
+      ],
+      [
+        2,
+        407
+      ]
+    ],
+    "counter_region": [],
+    "service_activity_region": [
+      [
+        5,
+        190
+      ],
+      [
+        230,
+        190
+      ],
+      [
+        230,
+        320
+      ],
+      [
+        5,
+        320
+      ]
+    ],
+    "video_width": 240,
+    "video_height": 426
+  }
+}
