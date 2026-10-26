@@ -1,14 +1,66 @@
-﻿.env
+﻿# Environment secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
 .venv/
 venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
-.ruff_cache/
-data/evidence/*
-!data/evidence/.gitkeep
-data/logs/*
-!data/logs/.gitkeep
-data/videos/*
-!data/videos/.gitkeep
+
+# Django
+*.log
+db.sqlite3
+staticfiles/
+
+# Node and React
+node_modules/
+**/node_modules/
+frontend_react/dist/
+frontend_react/build/
+.vite/
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Database data and backups
+.pgdata/
+postgres_data/
+database_data/
+*.sql
+*.dump
+
+# Videos and generated outputs
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+data/evidence/
+data/datasets/
+outputs/
+results/
+
+# Large model files and GPU engines
+*.pt
+*.pth
+*.onnx
+*.engine
+*.trt
+*.plan
+
+# Archives and temporary files
+*.zip
+*.7z
+*.rar
+*.tmp
+*.bak
